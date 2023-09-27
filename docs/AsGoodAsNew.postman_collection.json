@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "29934b82-4db4-411f-b977-a52157a1a3ce",
+		"name": "AsGoodAsNew",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16488578"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "XDEBUG_SESSION=XDEBUG_ECLIPSE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "asgoodasnew.local/api/users/3/cart-items",
+					"host": [
+						"asgoodasnew",
+						"local"
+					],
+					"path": [
+						"api",
+						"users",
+						"3",
+						"cart-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "XDEBUG_SESSION=XDEBUG_ECLIPSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product\": 1,\n    \"quantity\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "asgoodasnew.local/api/users/1/cart-items",
+					"host": [
+						"asgoodasnew",
+						"local"
+					],
+					"path": [
+						"api",
+						"users",
+						"1",
+						"cart-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "XDEBUG_SESSION=XDEBUG_ECLIPSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "asgoodasnew.local/api/users/1/cart-items/11",
+					"host": [
+						"asgoodasnew",
+						"local"
+					],
+					"path": [
+						"api",
+						"users",
+						"1",
+						"cart-items",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "XDEBUG_SESSION=XDEBUG_ECLIPSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "asgoodasnew.local/api/users/1/cart-items/11",
+					"host": [
+						"asgoodasnew",
+						"local"
+					],
+					"path": [
+						"api",
+						"users",
+						"1",
+						"cart-items",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
