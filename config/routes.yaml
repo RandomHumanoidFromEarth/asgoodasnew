@@ -3,3 +3,23 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+api_cart_list:
+    path: /api/users/{user}/cart-items
+    controller: App\Controller\Api\Users\CartItemController::list
+    methods: GET|HEAD
+
+api_cart_create:
+    path: /api/users/{user}/cart-items
+    controller: App\Controller\Api\Users\CartItemController::create
+    methods: POST
+
+api_cart_change:
+    path: /api/users/{user}/cart-items/{item}
+    controller: App\Controller\Api\Users\CartItemController::edit
+    methods: PUT
+
+api_cart_delete:
+    path: /api/users/{user}/cart-items/{item}
+    controller: App\Controller\Api\Users\CartItemController::delete
+    methods: DELETE
